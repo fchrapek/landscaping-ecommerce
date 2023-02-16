@@ -1,10 +1,26 @@
 import './globals.scss'
 import { Inter } from '@next/font/google';
-import { Nav } from '@/components';
+import { Header } from '@/components';
+import { createGlobalStyle } from 'styled-components';
+import StyledComponentsRegistry from '@/lib/registry';
+
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function RootLayout({ children }) {
+// const GlobalStyles = createGlobalStyle`
+//   :root {
+
+//   }
+// `
+
+interface IRootLayout {
+  children: React.ReactNode
+}
+
+export default function RootLayout({ children }: IRootLayout) {
+
+
+
   return (
     <html lang="en">
       {/*
@@ -13,8 +29,10 @@ export default function RootLayout({ children }) {
       */}
       <head />
       <body className={inter.className}>
-        <Nav />
-        {children}
+        <StyledComponentsRegistry>
+          <Header />
+          {children}
+        </StyledComponentsRegistry>
       </body>
     </html>
   )
