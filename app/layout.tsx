@@ -18,9 +18,6 @@ interface IRootLayout {
 }
 
 export default function RootLayout({ children }: IRootLayout) {
-
-
-
   return (
     <html lang="en">
       {/*

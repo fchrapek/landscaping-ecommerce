@@ -38,6 +38,11 @@ export default function Nav() {
             Sell
           </Link>
         </li>
+        <li>
+          <Link href={'/products'}>
+            Products
+          </Link>
+        </li>
       </ul>
     </NavStyles>
   )

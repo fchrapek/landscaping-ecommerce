@@ -1,6 +1,6 @@
 interface IContainer {
   className?: string;
-  children: React.ReactNode
+  children: React.ReactNode;
   as?: React.ElementType;
 }
 
