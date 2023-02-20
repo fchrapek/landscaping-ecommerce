@@ -10,6 +10,6 @@ export default function Container({ className, children, as = "div" }: IContaine
   return (
     <Container className={className}>
       {children}
-    </Container >
+    </Container>
   )
 }
