@@ -4,7 +4,6 @@ import styles from '../styles/ProductsList.module.scss'
 import ProductsListItem from './ProductsListItem';
 import { IProduct, IProducts } from "types";
 
-
 const ALL_PRODUCTS_QUERY = gql`
   query ALL_PRODUCTS_QUERY {
   allProducts {

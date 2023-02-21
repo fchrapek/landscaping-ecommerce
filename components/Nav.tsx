@@ -39,7 +39,7 @@ export default function Nav() {
           </Link>
         </li>
         <li>
-          <Link href={'/products'}>
+          <Link href={'/product'}>
             Products
           </Link>
         </li>

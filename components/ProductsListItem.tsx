@@ -1,10 +1,11 @@
 import { IProductProp } from "types";
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function ProductsListItem({ product }: IProductProp) {
 
   return (
-    <>
+    <Link href={`/product/${product.id}`}>
       {product?.photo && (
         < Image
           alt={product?.name}
@@ -15,6 +16,6 @@ export default function ProductsListItem({ product }: IProductProp) {
       )}
 
       <p>{product?.name}</p>
-    </>
+    </Link>
   )
 }
